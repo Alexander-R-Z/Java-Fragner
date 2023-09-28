@@ -1,7 +1,7 @@
 package code;
 public class Operatoren {
     public static void main (String[] args) {
-        for (int i=0; i<10; i++) { // i++ ist das gleiche wie i=i+1
+        for (int i=0; i<10; i++) { // i++ ist das gleiche wie i=i+1 // funktionirt so dass ein Integer mit dem namen i und dem wert 0 deklariert wird, dann wird überprüft ob i kleiner als 10 ist, wenn ja wird der code ausgeführt, wenn nein wird der code nicht ausgeführt und das programm beendet
             System.out.println("i="+i);
         }
         for (int i=10; i>0; i--) { // i-- ist das gleiche wie i=i-1

@@ -14,7 +14,7 @@ public class Datentypen { // Klasse: Datentypen (Datei: Datentypen.java)
         boolean bool = true; // boolean: true oder false
         char c = 65535; // char: 16 bit, 0 bis 65535
 
-        System.out.println("byte: "+b);
+        System.out.println("byte: "+b); // System.out.println("byte: "+b); Bedeutet: Gib den Text "byte: " aus, dann gib den Wert von b aus und gehe in die nächste Zeile
         System.out.println("short: "+s);
         System.out.println("int: "+i);
         System.out.println("long: "+l);
