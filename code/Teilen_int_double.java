@@ -1,4 +1,4 @@
-package code;
+//package code;
 public class Teilen_int_double {
     public static void main (String[] args) {
         int a=7, b=5;

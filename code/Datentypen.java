@@ -1,4 +1,4 @@
-package code; // Package: code (Ordner: code) // (Pfad von Projektordner (Java-Fragner) aus: code/datentypen.java)
+//package code; // Package: code (Ordner: code) // (Pfad von Projektordner (Java-Fragner) aus: code/datentypen.java)
 public class Datentypen { // Klasse: Datentypen (Datei: Datentypen.java)
     public static void main (String[] args) { // Methode: main (Einstiegspunkt des Programms)
         
