@@ -29,5 +29,6 @@ public class aufgabe4 {
         kapitalertrag /= 100;
         System.out.println("\n\nStartkapital: " + kapital + "\nKapitalertrag: " + kapitalertrag + "\nEndkapital nach " + jahre + " Jahr/en: " + zwischenergebnis);
 
+        scanner.close();
     }
 }

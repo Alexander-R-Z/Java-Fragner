@@ -14,5 +14,7 @@ public class aufgabe3 {
         double zahl3 = scanner.nextDouble();
         mittelwert = (zahl1 + zahl2 + zahl3) / 3;
         System.out.println("\n\nDer ergebniss ist: " + mittelwert);
+
+        scanner.close();
     }
 }

@@ -6,7 +6,7 @@ public class aufgabe2 {
 
         Scanner scanner = new Scanner(System.in);
         int ergebniss;
-        
+
         System.out.println("Das Programm wird 2 ganze Zahlen addiren und ausgeben.\n\n");
         System.out.print("Geben sie die erste Zahl ein: ");
         int zahl1 = scanner.nextInt();
@@ -15,5 +15,6 @@ public class aufgabe2 {
         ergebniss = zahl1 + zhal2;
         System.out.println("\n\nDas ergebniss ist: " + ergebniss + "\n");
 
+        scanner.close();
     }
 }
