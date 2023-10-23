@@ -4,9 +4,11 @@
  
  Aufgabe 1:
  
- Moodle https://moodle.hs-hannover.de/course/view.php?id=24635
+ Moodle 
+https://moodle.hs-hannover.de/course/view.php?id=24635
  
- PDF https://moodle.hs-hannover.de/pluginfile.php/971315/mod_resource/content/0/%C3%9Cbung1.pdf
+ PDF 
+https://moodle.hs-hannover.de/pluginfile.php/971315/mod_resource/content/0/%C3%9Cbung1.pdf
 
  Aufgabe 2-4:
 
@@ -24,9 +26,9 @@ https://moodle.hs-hannover.de/mod/resource/view.php?id=838273
  PDF
 https://moodle.hs-hannover.de/pluginfile.php/975911/mod_resource/content/0/%C3%9Cbung5-6.pdf
 
-    Aufgabe 7-8:
+ Aufgabe 7-8:
         
-    Moodle
+ Moodle
 https://moodle.hs-hannover.de/mod/resource/view.php?id=838274
 
  PDF
