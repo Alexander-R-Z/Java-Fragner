@@ -9,7 +9,7 @@ public class aufgabe7_8 {
 
         double winkel_bogen = winkelbogen(winkel_grad);
 
-        System.out.println(winkel_grad+" Grad => sin = "+sin(winkel_bogen, 20));
+        System.out.println(winkel_grad+" Grad => sin = "+sin(winkel_bogen, 10));
         System.out.println("Zum vergleich sin = "+Math.sin(winkel_bogen));
 
         scanner.close();
