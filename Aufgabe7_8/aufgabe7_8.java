@@ -29,7 +29,7 @@ public class aufgabe7_8 {
 
     public static double potenz(double basis, int exponent) {
         double potenz = 1;
-        for (int i = 1; i <= exponent; i++) {
+        for (int i = 0; i < exponent; i++) {
             potenz *= basis;
         }
         return potenz;
