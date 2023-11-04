@@ -23,5 +23,14 @@ public class datentypen { // Klasse: Datentypen (Datei: Datentypen.java)
         System.out.println("boolean: "+bool);
         System.out.println("char: "+c);
 
+        // array
+
+        int beispielArray[] = new int[10]; // int beispielArray = new int[10]; Bedeutet: Erstelle ein Array mit dem Namen beispielArray, welches 10 Elemente bekommen soll
+        int beispielArray2[] = {1,2,3,4,5,6,7,8,9,10}; // int beispielArray2 = {1,2,3,4,5,6,7,8,9,10}; Bedeutet: Erstelle ein Array mit dem Namen beispielArray2, welches 10 Elemente hat und die Werte 1 bis 10 hat
+        int beispielArray3[]; // int beispielArray3; Bedeutet: Erstelle ein Array(reverrenz variabel) mit dem Namen beispielArray3
+        beispielArray3 = new int[10]; // beispielArray3 = new int[10]; Bedeutet: Erstelle ein Array mit dem Namen beispielArray3, welches 10 Elemente bekommen soll
+        int[] array = {1,2,3,4,5,6,7,8,9,10}; // int[] array = {1,2,3,4,5,6,7,8,9,10}; Bedeutet: Erstelle ein Array mit dem Namen array, welches 10 Elemente hat und die Werte 1 bis 10 hat
+
+        System.out.println("array" + array[0]); // System.out.println("array" + array[0]); Bedeutet: Gib den Text "array" aus, dann gib den Wert von array[0] aus und gehe in die nächste Zeile (array[0] = 1)
     }
 }

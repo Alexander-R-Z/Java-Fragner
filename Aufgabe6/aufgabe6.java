@@ -13,5 +13,4 @@ public class aufgabe6 {
         }
         scanner.close();
     }
-    
 }
