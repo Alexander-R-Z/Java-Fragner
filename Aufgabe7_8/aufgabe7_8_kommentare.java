@@ -9,7 +9,7 @@ public class aufgabe7_8_kommentare {
 
         double winkel_bogen = winkelbogen(winkel_grad); // winkel_bogen: Variable vom Typ double mit dem Wert der Methode winkelbogen(winkel_grad) // winkelbogen(winkel_grad): Aufruf der Methode winkelbogen mit dem Parameter winkel_grad
 
-        System.out.println(winkel_grad+" Grad => sin = "+sin(winkel_bogen, 20)); // Gib den Wert der Methode sin(winkel_bogen, 20) aus. 20: Anzahl der Terme
+        System.out.println(winkel_grad+" Grad => sin = "+sin(winkel_bogen, 10)); // Gib den Wert der Methode sin(winkel_bogen, 20) aus. 20: Anzahl der Terme
         System.out.println("Zum vergleich sin = "+Math.sin(winkel_bogen)); // Gib den Wert der Methode Math.sin(winkel_bogen) aus (Vergleichswert)
 
         scanner.close();
