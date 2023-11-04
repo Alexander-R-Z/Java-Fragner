@@ -9,7 +9,7 @@ public class aufgabe7_8 {
 
         double winkel_bogen = winkelbogen(winkel_grad);
 
-        System.out.println(winkel_grad+" Grad => sin = "+sin(winkel_bogen, 20));
+        System.out.println(winkel_grad+" Grad => sin = "+sin(winkel_bogen, 10));
         System.out.println("Zum vergleich sin = "+Math.sin(winkel_bogen));
 
         scanner.close();
@@ -29,7 +29,7 @@ public class aufgabe7_8 {
 
     public static double potenz(double basis, int exponent) {
         double potenz = 1;
-        for (int i = 1; i <= exponent; i++) {
+        for (int i = 0; i < exponent; i++) {
             potenz *= basis;
         }
         return potenz;

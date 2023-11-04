@@ -32,5 +32,20 @@ public class datentypen { // Klasse: Datentypen (Datei: Datentypen.java)
         int[] array = {1,2,3,4,5,6,7,8,9,10}; // int[] array = {1,2,3,4,5,6,7,8,9,10}; Bedeutet: Erstelle ein Array mit dem Namen array, welches 10 Elemente hat und die Werte 1 bis 10 hat
 
         System.out.println("array" + array[0]); // System.out.println("array" + array[0]); Bedeutet: Gib den Text "array" aus, dann gib den Wert von array[0] aus und gehe in die nächste Zeile (array[0] = 1)
+
+
+        int arrayName[] = new int[5]; // ein array in das man 5 int werte speichern kann
+        arrayName[0] = 1;
+        arrayName[1] = 2;
+        arrayName[2] = 3;
+        arrayName[3] = 4;
+        arrayName[4] = 5;
+        int meineZahlen[] = {1,2,3,4,5}; // ein array in das ich 5 werte speicher
+        System.out.println(meineZahlen[0]);
+        String meineZahlen2[]; // eine array reverrenz variable (nur der name wird gesetzt) (alles andere muss später definirt werden)
+        meineZahlen2 = new String[2]; // hier wird das array erst richtig erzeugt (man kann 2 int werte speichern)
+        meineZahlen2[0] = "test";
+        String username = "max mustermann";
+        meineZahlen2[1] = username;
     }
 }

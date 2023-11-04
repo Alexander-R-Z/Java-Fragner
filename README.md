@@ -1,5 +1,5 @@
 # Java-Fragner
- Code aus den vorlesung von Fragner
+ Code aus den Vorlesungen von Fragner
  
  
  Aufgabe 1:

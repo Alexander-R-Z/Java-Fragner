@@ -29,7 +29,7 @@ public class aufgabe7_8_kommentare {
 
     public static double potenz(double basis, int exponent) { // Berechnung der Potenz
         double potenz = 1; // potenz: Variable vom Typ double mit dem Wert 1
-        for (int i = 1; i <= exponent; i++) { // for-Schleife: i = 1; i <= exponent; i++: i wird mit 1 initialisiert, solange i kleiner oder gleich exponent ist, wird i um 1 erhöht
+        for (int i = 0; i < exponent; i++) { // for-Schleife: i = 1; i <= exponent; i++: i wird mit 1 initialisiert, solange i kleiner oder gleich exponent ist, wird i um 1 erhöht
             potenz *= basis; // potenz *= basis: potenz = potenz * basis
         }
         return potenz; // return: Rückgabewert der Methode
