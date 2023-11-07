@@ -1,5 +1,6 @@
 package Aufgabe9_10_11;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class aufgabe9_10_11 {
     public static void main(String[] args) {
@@ -8,9 +9,7 @@ public class aufgabe9_10_11 {
 
         feldEinlesen(arrayInt);
 
-        int maximum = arrayInt[maximum(arrayInt)];
-
-        feldAusgeben(summe(arrayInt), mittelwert(arrayInt), maximum, maximum(arrayInt));
+        feldAusgeben(summe(arrayInt), mittelwert(arrayInt), arrayInt[maximum(arrayInt)], maximum(arrayInt));
 
     }
 
@@ -20,7 +19,14 @@ public class aufgabe9_10_11 {
 
         System.out.println("Geben Sie ein beliebiges 10er Feld uber die Tastatur eingeben. ");
         for (int i = 0; i < 10; i++) {
-            a[i] = scanner.nextInt();
+            try {
+                System.out.print("Geben Sie die " + (i + 1) + ". Zahl ein: ");
+                a[i] = scanner.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("Fehlerhafte Eingabe. Bitte wiederholen Sie die Eingabe.");
+                scanner.nextLine(); // consume the invalid input
+                i--;
+            }
         }
 
         scanner.close();
