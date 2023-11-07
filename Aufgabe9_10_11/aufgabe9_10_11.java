@@ -7,17 +7,18 @@ public class aufgabe9_10_11 {
 
         int[] arrayInt = new int[10];
 
-        feldEinlesen(arrayInt);
-
+        Scanner scanner = new Scanner(System.in);
+        feldEinlesen(arrayInt, scanner);
+        scanner.close();
+        
         feldAusgeben(summe(arrayInt), mittelwert(arrayInt), arrayInt[maximum(arrayInt)], maximum(arrayInt));
 
     }
 
-    public static void feldEinlesen (int... a) {
-
-        Scanner scanner = new Scanner(System.in);
+    public static void feldEinlesen(int[] a, Scanner scanner) {
 
         System.out.println("Geben Sie ein beliebiges 10er Feld uber die Tastatur eingeben. ");
+
         for (int i = 0; i < 10; i++) {
             try {
                 System.out.print("Geben Sie die " + (i + 1) + ". Zahl ein: ");
@@ -28,11 +29,9 @@ public class aufgabe9_10_11 {
                 i--;
             }
         }
-
-        scanner.close();
     }
 
-    public static int summe(int... a) {
+    public static int summe(int[] a) {
         int summe = 0;
         for (int e : a) {
             summe += e;
@@ -40,17 +39,13 @@ public class aufgabe9_10_11 {
         return summe;
     }
 
-    public static double mittelwert(int... a) {
-        int summe = 0;
-        for (int e : a) {
-            summe += e;
-        }
-        return (double) summe / (double) a.length;
+    public static double mittelwert(int[] a) {
+        return (double) summe(a) / (double) a.length;
     }
 
-    public static int maximum(int... a) {
+    public static int maximum(int[] a) {
         int currentMax = Integer.MIN_VALUE;
-        int currentMaxIndex = -1;
+        int currentMaxIndex = 0;
         for (int i = 0; i < a.length; i++) {
             if (a[i] > currentMax) {
                 currentMax = a[i];
