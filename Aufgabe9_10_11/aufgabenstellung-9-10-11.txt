@@ -1,0 +1,18 @@
+• Aufgabe 9
+— Erstellen Sie ein Feld von 10 int-Werten. Initialisieren Sie das Feld mit beliebigen Daten.
+— Berechnen Sie die Summe aller Feldelemente und geben Sie diese Summe aus.
+— Berechnen Sie den Mittelwert aller Feldelemente und geben Sie den Mittelwert aus.
+— Ermitteln Sie das grösste Feldelement und geben Sie dieses Feldelement und seine Position (Index) im Feld aus.
+— Erstellen Sie vor der Programmerstellung ein Struktogramm.
+
+• Aufgabe 10
+Strukturieren Sie Ihr Programm mit folgenden Unterprogrammen
+— int summe (int [10]): Berechnung der Summe aller Elemente des übergebenen Feldes
+— float mittelwert (int [10]): Berechnung des Mittelwerts aller Elementedes übergebenen Feldes
+— int maximum (int [10]): Suche nach dem grössten Feldelement und Ausgabe seiner Position (Index) im Feld.
+— Passen Sie Ihr Struktogramm entsprechend an.
+
+• Aufgabe 11
+— Erweitern Sie Ihr Hauptprogramm int main(), damit der Benutzer ein beliebiges 10er Feld uber die Tastatur eingeben kann. Schreiben Sie dazu eine Funktion: void feldEin1esen (int [10]);
+— Entwickeln Sie ein Unterprogramm, um ein 10er Feld am Bildschirm anzeigen zu können. void feldAusgeben (int [10]): Ausgabe eines 10er Feldes am Bildschirm
+— Berechnen Sie für das vom Benutzer eingegebene Feld den Mittelwert, die Summe, das grösste Element und geben Sie das Feld aus (siehe Aufgabe 10).
