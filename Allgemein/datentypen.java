@@ -23,6 +23,14 @@ public class datentypen { // Klasse: Datentypen (Datei: Datentypen.java)
         System.out.println("boolean: "+bool);
         System.out.println("char: "+c);
 
+        // convert
+
+        float f2 = 3.4028235E38F; // float: 32 bit, 1.4E-45 bis 3.4028235E38
+        int i2 = (int) f2; // converts float to int
+        double d2 = 1.7976931348623157E308; // double: 64 bit, 4.9E-324 bis 1.7976931348623157E308
+        i2 = (int) d2; // converts double to int
+        char c2 = (char) i2; // converts int to char
+
         // array
 
         int beispielArray[] = new int[10]; // int beispielArray = new int[10]; Bedeutet: Erstelle ein Array mit dem Namen beispielArray, welches 10 Elemente bekommen soll
