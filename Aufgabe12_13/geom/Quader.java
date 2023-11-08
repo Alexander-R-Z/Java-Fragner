@@ -20,6 +20,6 @@ public class Quader {
     }
 
     double getRaumdiagonale() {
-        return Math.sqrt(Math.pow((double)length, 3)+Math.pow((double)width, 3)+Math.pow((double)height, 3));
+        return Math.sqrt(Math.pow((double)length, 2)+Math.pow((double)width, 2)+Math.pow((double)height, 2));
     }
 }

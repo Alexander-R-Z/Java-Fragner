@@ -1,0 +1,27 @@
+• Aufgabe 12
+    — Erstellen Sie eine Java-Klasse und ein Java-Paket
+        i. Klassenname Quader
+        ii. Paketname: geom
+        iii. Ohne die main() -Methode
+    a. Die Objekte dieser Klasse sollen folgende Attribute haben: Länge, Breite und Höhe
+        i. Wählen Sie einen geeigneten Datentyp und die korrekte Schreibweise für die Attribute
+    b. Die Objekte sollen folgende Methoden besitzen:
+        i. Volumen berechnen: V = a • b • c
+        ii. Mantelfläche berechnen: AM = 2(a • c + b c)
+        iii. Oberfläche bestimmen: AD = AM + 2(a • b)
+        iv. Länge einer Raumdiagonalen berechnen: d = Math.sqrt(a² + b² + c²)
+            Wählen Sie die korrekte Schreibweise und Datentypen bei den Parametern
+            Bemerkung: Die Wurzel-Funktion ist in der Klasse Math definiert.
+            Verwenden Sie die getter-Schreibweisen für die Bezeichnung Ihrer Methoden
+
+• Aufgabe 13
+    a. Erzeugen Sie eine Klasse TestQuader, die Ihre Quader-Klasse testet
+        diese Klasse gehört auch in das Paket geom
+        die Testklasse verfugt uber die mal n-Methode
+    b. erzeugen Sie ein Objekt quadl der Klasse Quader.
+        setzen Sie dessen Datenfelder auf beliebige positive Werte
+        rufen Sie alle Methoden hintereinander auf
+        und überprufen Sie die Ausgabe auf dem Bildschirm mittels println.
+    c. erzeugen Sie ein zweites Objekt quad2
+        setzen Sie dessen Datenfelder auf beliebige positive Werte
+        ermitteln Sie das Objekt mit dem grössten Volumen und geben es auf dem Bildschirm
