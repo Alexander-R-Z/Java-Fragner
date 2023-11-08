@@ -3,9 +3,9 @@ package Aufgabe12_13.geom;
 import java.lang.Math;
 
 public class Quader {
-    double length;
-    double width;
-    double height;
+    int length;
+    int width;
+    int height;
 
     double getVolume() {
         return length*width*height;
@@ -20,6 +20,6 @@ public class Quader {
     }
 
     double getRaumdiagonale() {
-        return Math.sqrt(Math.pow(length, 3)+Math.pow(width, 3)+Math.pow(height, 3));
+        return Math.sqrt(Math.pow((double)length, 3)+Math.pow((double)width, 3)+Math.pow((double)height, 3));
     }
 }

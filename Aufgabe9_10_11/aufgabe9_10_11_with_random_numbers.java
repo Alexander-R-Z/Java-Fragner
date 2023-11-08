@@ -2,7 +2,7 @@ package Aufgabe9_10_11;
 
 public class aufgabe9_10_11_with_random_numbers {
     public static void main(String[] args) {
-        int[] arrey = new int[20];
+        int[] arrey = new int[10];
         eingabeArrey(arrey);
         ausgabeArrey(arrey);
     }
