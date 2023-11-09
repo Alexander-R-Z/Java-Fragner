@@ -1,14 +1,14 @@
 package Aufgabe12_13.geom;
 
-import java.lang.Math;
+import java.lang.Math; // import is used to import a package (Math is a package) Math has useful methods like Math.pow() and Math.sqrt()
 
 public class Quader {
     int length;
     int width;
     int height;
 
-    double getVolume() {
-        return length*width*height;
+    double getVolume() { // when it gets called, it returns the value of length*width*height
+        return length*width*height; // return is used to return a value from a method
     }
 
     double getMantelflaeche() {

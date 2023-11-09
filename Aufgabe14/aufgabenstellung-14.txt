@@ -1,0 +1,12 @@
+• Aufgabe 14
+    a. Setzen Sie alle Datenfelder auf private.
+    b. Die Folgefehler können durch öffentliche Getter- und Settermethoden behoben werden
+        i. Führen Sie das für ein Datenfeld (z.B. breite) durch.
+        ii. In NetBeans kann das Erzeugen der Getter- und Setter Methoden automatisch erfolgen. 
+            Wählen Sie im Menupunkt Quelle (Source) den Unterpunkt Anweisung einfügen (Insert Code) 
+            und wählen Sie anschliessend die Setter- und Gettermethoden.
+    c. Falsche Benutzereingaben sollen in der Methode setBre ite abgefangen werden, so dass zunächst 
+        die Gültiigkeit der Werte überprüft wird, bevor die Wertzuweisung erfolgt. D.h. in diesem Fall sind 
+        nur positive Werte zulässig.
+    i. Bei falschen Werten ist eine Fehlermeldung auf dem Bildschirm auszugeben und der Wert mit 1 zu initialisieren. 
+        Bei einem zuässigen Wert erfolgt die Zuweisung.
