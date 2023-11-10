@@ -2,7 +2,7 @@ package Aufgabe14.geom;
 
 import java.lang.Math;
 
-public class Quader {
+class QuaderV2 {
     private int length;
     private int width;
     private int height;
@@ -25,25 +25,25 @@ public class Quader {
 
     // set methods...
 
-    public void setLength(int length) {
-        if (length>0) {
-            this.length = length;
+    public void setLength(int a) {
+        if (a>0) {
+            length = a;
         } else {
             System.out.println("Länge muss grösser als 0 sein!");
         }
     }
 
-    public void setWidth(int width) {
-        if (width>0) {
-            this.width = width;
+    public void setWidth(int a) {
+        if (a>0) {
+            width = a;
         } else {
             System.out.println("Breite muss grösser als 0 sein!");
         }
     }
 
-    public void setHeight(int height) {
-        if (height>0) {
-            this.height = height;
+    public void setHeight(int a) {
+        if (a>0) {
+            height = a;
         } else {
             System.out.println("Höhe muss grösser als 0 sein!");
         }
