@@ -1,12 +1,48 @@
-package Aufgabe14.geom;
+package Aufgabe15_16.geom;
 
 import java.lang.Math;
 
-class QuaderV2 {
-    private int length;
-    private int width;
-    private int height;
+public class Quader {
+    private int length, width, height;
+    static int noQuader;
 
+
+    /**
+     * Konstrukor (no parameters)
+     * 
+     * Automaticly called when class gets Created
+     */
+    public Quader() {
+        this(1);
+    }
+
+    /**
+     * Konstrukor (one parameters)
+     * 
+     * Automaticly called when class gets Created
+     */
+    public Quader(int value) {
+        this(value, value, value);
+    }
+
+    /**
+     * Konstrukor (three parameters)
+     * 
+     * Automaticly called when class gets Created
+     */
+    public Quader(int length, int width, int height) {
+        noQuader++;
+        if (length<=0 || width<=0 || height<=0) {
+            System.out.println("Error: Der Wert muss grösser als 0 sein!");
+            this.length = 1;
+            this.width = 1;
+            this.height = 1;
+        } else {
+            this.length = length;
+            this.width = width;
+            this.height = height;
+        }
+    }
 
     // get methods...
 
@@ -25,25 +61,25 @@ class QuaderV2 {
 
     // set methods...
 
-    public void setLength(int a) {
-        if (a>0) {
-            length = a;
+    public void setLength(int length) {
+        if (length>0) {
+            this.length = length;
         } else {
             System.out.println("Länge muss grösser als 0 sein!");
         }
     }
 
-    public void setWidth(int a) {
-        if (a>0) {
-            width = a;
+    public void setWidth(int width) {
+        if (width>0) {
+            this.width = width;
         } else {
             System.out.println("Breite muss grösser als 0 sein!");
         }
     }
 
-    public void setHeight(int a) {
-        if (a>0) {
-            height = a;
+    public void setHeight(int height) {
+        if (height>0) {
+            this.height = height;
         } else {
             System.out.println("Höhe muss grösser als 0 sein!");
         }

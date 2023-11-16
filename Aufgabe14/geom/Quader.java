@@ -8,6 +8,17 @@ public class Quader {
     private int height;
 
 
+    /**
+     * Konstrukor
+     * 
+     * Automaticly called when class gets Created
+     */
+    public Quader() {
+        length = 1;
+        width = 1;
+        height = 1;
+    }
+
     // get methods...
 
     public int getLength() {
