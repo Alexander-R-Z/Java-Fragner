@@ -6,6 +6,12 @@ public class Quader {
     private int length, width, height;
     private static int noQuader;
 
+    /**
+     * Error object
+     * 
+     * Used to store error messages
+     */
+    Error QuaderError = new Error();
 
     /**
      * Konstrukor (no parameters)
@@ -31,22 +37,21 @@ public class Quader {
      * Automaticly called when class gets Created
      */
     public Quader(int length, int width, int height) {
-        noQuader++;
         if (length<=0 || width<=0 || height<=0) {
             System.out.println("Error: Der Wert muss grösser als 0 sein!");
             if (length<=0) {
-                System.out.println("Länge: "+length);
                 this.length = 1;
+                System.out.println("Länge ("+length+") muss grösser als 0 sein!");
                 System.out.println("Länge wird auf: "+this.length+" gesetzt.");
             }
             if (width<=0) {
-                System.out.println("Breite: "+width);
                 this.width = 1;
+                System.out.println("Breite ("+width+") muss grösser als 0 sein!");
                 System.out.println("Breite wird auf: "+this.width+" gesetzt.");
             }
             if (height<=0) {
-                System.out.println("Höhe: "+height);
                 this.height = 1;
+                System.out.println("Höhe ("+height+") muss grösser als 0 sein!");
                 System.out.println("Höhe wird auf: "+this.height+" gesetzt.");
             }
         } else {
@@ -54,6 +59,7 @@ public class Quader {
             this.width = width;
             this.height = height;
         }
+        noQuader++;
     }
 
     // get methods...

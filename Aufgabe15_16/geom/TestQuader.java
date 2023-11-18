@@ -14,11 +14,9 @@ public class TestQuader {
         Scanner sc = new Scanner(System.in);
 
         char exit;
-
         int input = 0;
 
         do {
-
             do {
                 System.out.println("\nWelchen Fall wollen Sie testen? (1, 2, 3)?");
                 try {
