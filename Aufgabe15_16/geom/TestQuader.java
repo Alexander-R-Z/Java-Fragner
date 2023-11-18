@@ -1,35 +1,79 @@
 package Aufgabe15_16.geom;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class TestQuader {
     public static void main(String[] args) {
 
-        Quader quader1 = new Quader(); // new Quader() creates a new Quader object and returns a reference to it (quader1) which is stored in the variable quader1
-
-        // (int)(Math.random()*100) returns a random number between 0 and 100
-        quader1.setLength((int)(Math.random()*100));
-        quader1.setWidth((int)(Math.random()*100));
-        quader1.setHeight((int)(Math.random()*100));
-
-        System.out.println("\nQuader 1\nLänge: " + quader1.getLength() + "\nBreite: " + quader1.getWidth() + "\nHöhe: " + quader1.getHeight());
-
-        System.out.println("\nQuader 1\nVolume: " + quader1.getVolume() + "\nMantelfläche: " + quader1.getMantelflaeche() + "\nOberfläche: " + quader1.getOberflaeche() + "\nRaumdiagonale: " + quader1.getRaumdiagonale());
-
-        Quader quader2 = new Quader();
-
-        quader2.setLength((int)(Math.random()*100));
-        quader2.setWidth((int)(Math.random()*100));
-        quader2.setHeight((int)(Math.random()*100));
-
-        System.out.println("\nQuader 2\nLänge: " + quader2.getLength() + "\nBreite: " + quader2.getWidth() + "\nHöhe: " + quader2.getHeight());
-
-        System.out.println("\nQuader 2\nVolume: " + quader2.getVolume() + "\nMantelfläche: " + quader2.getMantelflaeche() + "\nOberfläche: " + quader2.getOberflaeche() + "\nRaumdiagonale: " + quader2.getRaumdiagonale());
-
-        if (quader1.getVolume()>quader2.getVolume()) {
-            System.out.println("\nQuader 1 (" + quader1.getVolume() + ") ist gröser als Quader 2 (" + quader2.getVolume() + ")\n");
-        } else if (quader1.getVolume()<quader2.getVolume()) {
-            System.out.println("\nQuader 2 (" + quader2.getVolume() + ") ist gröser als Quader 1 (" + quader1.getVolume() + ")\n");
-        } else {
-            System.out.println("\nQuader 1 und Quader 2 sind Gleichgros (" + quader1.getVolume() + " = " + quader2.getVolume() + ")\n");
+        for (int i = 0; i < 50; i++) {
+            new Quader();
         }
+        System.out.println("Number of objects: " + Quader.getNoQuader());
+
+        Scanner sc = new Scanner(System.in);
+
+        char exit;
+
+        int input = 0;
+
+        do {
+
+            do {
+                System.out.println("\nWelchen Fall wollen Sie testen? (1, 2, 3)?");
+                try {
+                    input = sc.nextInt();
+                } catch (Exception e) {
+                    System.out.println("\nFehlerhafte Eingabe. Bitte wiederholen Sie die Eingabe.");
+                    sc.nextLine(); // consume the invalid input
+                }
+            } while (input < 1 || input > 3);
+
+            int[] a = new int[3];
+
+            switch (input) {
+                case 1:
+                Quader q1 = new Quader();
+                System.out.println(q1.getVolume());
+                    break;
+            
+                case 2:
+                System.out.println("Geben Sie die Seiten Länge ein.");
+                for (int i = 0; i < 1; i++) {
+                    try {
+                        a[i] = sc.nextInt();
+                    } catch (InputMismatchException e) {
+                        System.out.println("Fehlerhafte Eingabe. Bitte wiederholen Sie die Eingabe.");
+                        sc.nextLine(); // consume the invalid input
+                        i--;
+                    }
+                }
+                Quader q2 = new Quader(a[0]);
+                System.out.println(q2.getVolume());
+                    break;
+            
+                case 3:
+                System.out.println("Geben Sie Länge, Breite und Höhe ein.");
+                for (int i = 0; i < 3; i++) {
+                    try {
+                        System.out.print("Geben Sie die " + (i + 1) + ". Zahl ein: ");
+                        a[i] = sc.nextInt();
+                    } catch (InputMismatchException e) {
+                        System.out.println("Fehlerhafte Eingabe. Bitte wiederholen Sie die Eingabe.");
+                        sc.nextLine(); // consume the invalid input
+                        i--;
+                    }
+                }
+                Quader q3 = new Quader(a[0], a[1], a[2]);
+                System.out.println(q3.getVolume());
+                    break;
+            
+                default:
+                    break;
+            }
+            System.out.println("Wollen Sie noch einen Fall testen? (y/n)");
+            exit = sc.next().charAt(0); // Read user input
+        } while (exit == 'y' || exit == 'Y' || exit == 'j' || exit == 'J');
+        sc.close();
     }
 }

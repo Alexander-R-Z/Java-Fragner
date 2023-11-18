@@ -4,7 +4,7 @@ import java.lang.Math;
 
 public class Quader {
     private int length, width, height;
-    static int noQuader;
+    private static int noQuader;
 
 
     /**
@@ -34,9 +34,21 @@ public class Quader {
         noQuader++;
         if (length<=0 || width<=0 || height<=0) {
             System.out.println("Error: Der Wert muss grösser als 0 sein!");
-            this.length = 1;
-            this.width = 1;
-            this.height = 1;
+            if (length<=0) {
+                System.out.println("Länge: "+length);
+                this.length = 1;
+                System.out.println("Länge wird auf: "+this.length+" gesetzt.");
+            }
+            if (width<=0) {
+                System.out.println("Breite: "+width);
+                this.width = 1;
+                System.out.println("Breite wird auf: "+this.width+" gesetzt.");
+            }
+            if (height<=0) {
+                System.out.println("Höhe: "+height);
+                this.height = 1;
+                System.out.println("Höhe wird auf: "+this.height+" gesetzt.");
+            }
         } else {
             this.length = length;
             this.width = width;
@@ -58,6 +70,9 @@ public class Quader {
         return height;
     }
 
+    public static int getNoQuader() {
+        return noQuader;
+    }
 
     // set methods...
 
@@ -91,7 +106,7 @@ public class Quader {
      * @return the volume
      */
 
-    public double getVolume() {
+    public int getVolume() {
         return length*width*height;
     }
 
@@ -101,7 +116,7 @@ public class Quader {
      * @return the lateral surface
      */
 
-    public double getMantelflaeche() {
+    public int getMantelflaeche() {
         return 2*(length*width+width*height);
     }
 
@@ -111,7 +126,7 @@ public class Quader {
      * @return the surface area
      */
 
-    public double getOberflaeche() {
+    public int getOberflaeche() {
         return getMantelflaeche()+2*(length*width);
     }
 
