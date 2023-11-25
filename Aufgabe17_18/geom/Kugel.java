@@ -23,8 +23,8 @@ public class Kugel extends Figur3D {
         noKugel++;
         if (Radius <= 0) {
             this.Radius = 1;
-            System.out.println("Höhe (" + Radius + ") muss grösser als 0 sein!");
-            System.out.println("Höhe wird auf: " + this.Radius + " gesetzt.");
+            System.out.println("Radius (" + Radius + ") muss grösser als 0 sein!");
+            System.out.println("Radius wird auf: " + this.Radius + " gesetzt.");
         } else {
             this.Radius = Radius;
         }
