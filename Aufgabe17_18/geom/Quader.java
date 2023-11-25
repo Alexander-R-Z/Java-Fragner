@@ -2,7 +2,6 @@ package Aufgabe17_18.geom;
 
 public class Quader extends Figur3D {
     private double length, width, height;
-    private int QuaderID;
     private static int noQuader = 0;
 
     /**
@@ -31,7 +30,6 @@ public class Quader extends Figur3D {
     public Quader(double length, double width, double height) {
         super(Figurtypen.Quader);
         noQuader++;
-        QuaderID = noQuader;
         if (length<=0 || width<=0 || height<=0) {
             System.out.println("Error: Der Wert muss grösser als 0 sein!");
             if (length<=0) {
@@ -54,15 +52,6 @@ public class Quader extends Figur3D {
             this.width = width;
             this.height = height;
         }
-    }
-
-    /**
-     * getQuaderID
-     * 
-     * @return The ID of the 3D figure.
-     */
-    public int getQuaderID() {
-        return QuaderID;
     }
 
     /**

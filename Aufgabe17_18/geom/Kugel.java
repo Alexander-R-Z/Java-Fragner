@@ -2,7 +2,6 @@ package Aufgabe17_18.geom;
 
 public class Kugel extends Figur3D {
     private double Radius;
-    private int KugelID;
     private static int noKugel = 0;
 
     /**
@@ -22,7 +21,6 @@ public class Kugel extends Figur3D {
     public Kugel(double Radius) {
         super(Figurtypen.Kugel);
         noKugel++;
-        KugelID = noKugel;
         if (Radius <= 0) {
             this.Radius = 1;
             System.out.println("Höhe (" + Radius + ") muss grösser als 0 sein!");
@@ -30,15 +28,6 @@ public class Kugel extends Figur3D {
         } else {
             this.Radius = Radius;
         }
-    }
-
-    /**
-     * getKugelID
-     * 
-     * @return The ID of the 3D figure.
-     */
-    public int getKugelID() {
-        return KugelID;
     }
 
     /**
