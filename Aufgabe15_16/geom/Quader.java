@@ -30,29 +30,28 @@ public class Quader {
      * Automaticly called when class gets Created
      */
     public Quader(int length, int width, int height) {
+        noQuader++;
         if (length<=0 || width<=0 || height<=0) {
             System.out.println("Error: Der Wert muss grösser als 0 sein!");
             if (length<=0) {
-                length = 1;
                 System.out.println("Länge ("+length+") muss grösser als 0 sein!");
-                System.out.println("Länge wird auf: "+this.length+" gesetzt.");
+                length = 1;
+                System.out.println("Länge wird auf: "+length+" gesetzt.");
             }
             if (width<=0) {
-                width = 1;
                 System.out.println("Breite ("+width+") muss grösser als 0 sein!");
-                System.out.println("Breite wird auf: "+this.width+" gesetzt.");
+                width = 1;
+                System.out.println("Breite wird auf: "+width+" gesetzt.");
             }
             if (height<=0) {
-                height = 1;
                 System.out.println("Höhe ("+height+") muss grösser als 0 sein!");
-                System.out.println("Höhe wird auf: "+this.height+" gesetzt.");
+                height = 1;
+                System.out.println("Höhe wird auf: "+height+" gesetzt.");
             }
-        } else {
-            this.length = length;
-            this.width = width;
-            this.height = height;
         }
-        noQuader++;
+        this.length = length;
+        this.width = width;
+        this.height = height;
     }
 
     // get methods...
