@@ -7,7 +7,7 @@ public class datentypen { // Klasse: Datentypen (Datei: Datentypen.java)
 
         byte b = 127; // byte: 8 bit, -128 bis 127
         short s = 32767; // short: 16 bit, -32768 bis 32767
-        int i = 2147483647; // int: 32 bit, -2147483648 bis 2147483647
+        int n = 2147483647; // int: 32 bit, -2147483648 bis 2147483647
         long l = 9223372036854775807L; // long: 64 bit, -9223372036854775808 bis 9223372036854775807
         float f = 3.4028235E38F; // float: 32 bit, 1.4E-45 bis 3.4028235E38
         double d = 1.7976931348623157E308; // double: 64 bit, 4.9E-324 bis 1.7976931348623157E308
@@ -16,7 +16,7 @@ public class datentypen { // Klasse: Datentypen (Datei: Datentypen.java)
 
         System.out.println("byte: "+b); // System.out.println("byte: "+b); Bedeutet: Gib den Text "byte: " aus, dann gib den Wert von b aus und gehe in die nächste Zeile
         System.out.println("short: "+s);
-        System.out.println("int: "+i);
+        System.out.println("int: "+n);
         System.out.println("long: "+l);
         System.out.println("float: "+f);
         System.out.println("double: "+d);
@@ -55,5 +55,47 @@ public class datentypen { // Klasse: Datentypen (Datei: Datentypen.java)
         meineZahlen2[0] = "test";
         String username = "max mustermann";
         meineZahlen2[1] = username;
+
+
+        // String (Zeichenkette) (String ist ein Objekt aber verhält sich wie ein Datentyp)
+
+        String text1 = "test";
+        String text2 = "test";
+        if (text1 == text2) { // == vergleicht ob die beiden variablen gleich sind
+            System.out.println("text1 und text2 sind gleich");
+        } else if (text1.equals(text2)) {
+            System.out.println("text1 und text2 sind gleich (equals)");
+        } else {
+            System.out.println("text1 und text2 sind nicht gleich");
+        }
+
+        for (int i = 0; i < text1.length(); i++) { // text1.length() gibt die länge des strings zurück
+            System.out.println(text1.charAt(i)); // text1.charAt(i) gibt den char an der stelle i zurück
+        }
+
+        StringBuffer TempText = new StringBuffer(); // erstellt ein StringBuffer objekt mit dem namen TempText und
+
+        TempText.append("test"); // TempText.append("test"); fügt den text "test" an den string an
+
+
+        // Vergleich von Objekten
+
+        // if (object1.vergleicht(object2)) {
+        //     System.out.println("object1 und object2 sind gleich");
+        // } else {
+        //     System.out.println("object1 und object2 sind nicht gleich");
+        // }
+
+        // public class object1 extends object2 { // object1 erbt von object2
+            // super(); // ruft den konstruktor von object2 auf
+            // super(parameter, parameter2, parameter3); // ruft den konstruktor von object2 auf und übergibt die parameter
+
+        try {
+            // code der fehler verursachen könnte (meist user input)
+        } catch (Exception e) {
+            // code der ausgeführt wird wenn ein fehler auftritt
+            // e ist ein objekt vom typ Exception und enthält informationen über den fehler
+        }
+
     }
 }

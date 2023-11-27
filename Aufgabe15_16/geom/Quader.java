@@ -40,17 +40,17 @@ public class Quader {
         if (length<=0 || width<=0 || height<=0) {
             System.out.println("Error: Der Wert muss grösser als 0 sein!");
             if (length<=0) {
-                this.length = 1;
+                length = 1;
                 System.out.println("Länge ("+length+") muss grösser als 0 sein!");
                 System.out.println("Länge wird auf: "+this.length+" gesetzt.");
             }
             if (width<=0) {
-                this.width = 1;
+                width = 1;
                 System.out.println("Breite ("+width+") muss grösser als 0 sein!");
                 System.out.println("Breite wird auf: "+this.width+" gesetzt.");
             }
             if (height<=0) {
-                this.height = 1;
+                height = 1;
                 System.out.println("Höhe ("+height+") muss grösser als 0 sein!");
                 System.out.println("Höhe wird auf: "+this.height+" gesetzt.");
             }
