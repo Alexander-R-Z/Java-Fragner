@@ -7,13 +7,6 @@ public class Quader {
     private static int noQuader;
 
     /**
-     * Error object
-     * 
-     * Used to store error messages
-     */
-    Error QuaderError = new Error();
-
-    /**
      * Konstrukor (no parameters)
      * 
      * Automaticly called when class gets Created
@@ -108,40 +101,36 @@ public class Quader {
 
 
     /**
-     * Calculates the volume of the cuboid.
+     * Calculates the volume of the Quader.
      * @return the volume
      */
-
     public int getVolume() {
         return length*width*height;
     }
 
 
     /**
-     * Calculates the lateral surface of the cuboid.
+     * Calculates the lateral surface of the Quader.
      * @return the lateral surface
      */
-
     public int getMantelflaeche() {
         return 2*(length*width+width*height);
     }
 
 
     /**
-     * Calculates the surface area of the cuboid.
+     * Calculates the surface area of the Quader.
      * @return the surface area
      */
-
     public int getOberflaeche() {
         return getMantelflaeche()+2*(length*width);
     }
 
 
     /**
-     * Calculates the space diagonal of the cuboid.
+     * Calculates the space diagonal of the Quader.
      * @return the space diagonal
      */
-
     public double getRaumdiagonale() {
         return Math.sqrt(Math.pow((double)length, 2)+Math.pow((double)width, 2)+Math.pow((double)height, 2));
     }
