@@ -97,5 +97,33 @@ public class datentypen { // Klasse: Datentypen (Datei: Datentypen.java)
             // e ist ein objekt vom typ Exception und enthält informationen über den fehler
         }
 
+        // int number = 10;
+        // Class array[] = new Class[number]; // erstellt ein array mit dem namen array und der länge nomber
+        // for (int i = 0; i < number; i++) {
+        //     array[i] = new Class(); // erstellt ein objekt vom typ Class und speichert es in das array an der stelle i
+        // }
+        // array[0].method(); // ruft die methode method() des objekts an der stelle 0 im array auf
+
+        // Class ParrentClass {
+        //     public void method() {
+        //         System.out.println("method");
+        //     }
+        // }
+
+        // Class ChildClass extends ParrentClass {
+        //     @Override // gibt an das die methode überschrieben wird
+        //     public void method() {
+        //         System.out.println("Overrided method");
+        //     }
+
+        //     public PerrentClassMethod() { // name does not matter
+        //         super.method(); // ruft die methode method() der superclass auf
+        //     }
+        // }
+
+        // public abstract class ClassName {
+        //     public abstract void method(); // abstract methoden haben keinen code und müssen in der child class überschrieben werden
+        // }
+
     }
 }
