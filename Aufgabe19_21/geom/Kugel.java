@@ -1,4 +1,4 @@
-package Aufgabe17_18.geom;
+package Aufgabe19_21.geom;
 
 public class Kugel extends Figur3D {
     private double Radius;
@@ -46,5 +46,15 @@ public class Kugel extends Figur3D {
     @Override
     public double getVolume() {
         return (4/3)*Math.PI*Math.pow(Radius, 3);
+    }
+
+    /**
+     * toString
+     * 
+     * @return The string representation of the object.
+     */
+    @Override
+    public String toString() {
+        return getFigurtyp() + ": " + (4/3) + " x " + Math.PI + " x " + Math.pow(Radius, 3) + " (Volumen: " + getVolume() + ")";
     }
 }
