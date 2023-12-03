@@ -47,7 +47,7 @@ public class Figur3D {
         noFigur3D++;
         this.figurtyp = figurtyp;
         this.ID = noFigur3D;
-        System.out.println( figurtyp + "—Objekt wurde mit ID " + this.ID + " erzeugt.");
+        System.out.println( figurtyp + "-Objekt wurde mit ID " + this.ID + " erzeugt.");
     }
 
     /**

@@ -38,6 +38,15 @@ public class Kugel extends Figur3D {
     public static int getNoKugel() {
         return noKugel;
     }
+    
+    /**
+     * getRadius
+     * 
+     * @return The Radius of the Kugel.
+     */
+    public double getRadius() {
+        return Radius;
+    }
 
     /**
      * Calculates the volume of the Kugel.

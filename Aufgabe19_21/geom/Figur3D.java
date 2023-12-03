@@ -47,7 +47,7 @@ public abstract class Figur3D {
         noFigur3D++;
         this.figurtyp = figurtyp;
         this.ID = noFigur3D;
-        System.out.println( figurtyp + "—Objekt wurde mit ID " + this.ID + " erzeugt.");
+        System.out.println( figurtyp + "-Objekt wurde mit ID " + this.ID + " erzeugt.");
     }
 
     /**
@@ -80,9 +80,17 @@ public abstract class Figur3D {
     /**
      * getVolume
      * 
-     * @return The volume of the 3D figure. (default: 0.0)
+     * @return The volume of the 3D figure. Initialization is done in the child
      */
     public abstract double getVolume();
+    
+    /**
+     * toString
+     * 
+     * @return The string representation of the 3D figure. Initialization is done in the child
+     */
+    @Override
+    public abstract String toString();
 
     /**
      * equals

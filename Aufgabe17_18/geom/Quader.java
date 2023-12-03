@@ -67,7 +67,7 @@ public class Quader extends Figur3D {
      * @return the volume
      */
     @Override
-     public double getVolume() {
-        return length*width*height;
+    public double getVolume() {
+        return length * width * height;
     }
 }
