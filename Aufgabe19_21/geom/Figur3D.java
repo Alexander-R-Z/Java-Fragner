@@ -83,14 +83,6 @@ public abstract class Figur3D {
      * @return The volume of the 3D figure. Initialization is done in the child
      */
     public abstract double getVolume();
-    
-    /**
-     * toString
-     * 
-     * @return The string representation of the 3D figure. Initialization is done in the child
-     */
-    @Override
-    public abstract String toString();
 
     /**
      * equals
@@ -102,7 +94,7 @@ public abstract class Figur3D {
     public boolean equals(Object obj) {
         if (obj instanceof Figur3D) {
             Figur3D other = (Figur3D) obj;
-            return this.figurtyp == other.figurtyp && this.ID == other.ID;
+            return this.getVolume() == other.getVolume();
         }
         return false;
     }

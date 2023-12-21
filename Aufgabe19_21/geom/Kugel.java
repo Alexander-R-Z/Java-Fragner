@@ -54,7 +54,7 @@ public class Kugel extends Figur3D {
      */
     @Override
     public double getVolume() {
-        return (4/3)*Math.PI*Math.pow(Radius, 3);
+        return (4./3.)*Math.PI*Math.pow(Radius, 3);
     }
 
     /**

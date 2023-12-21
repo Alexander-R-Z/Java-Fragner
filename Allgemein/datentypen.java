@@ -23,6 +23,9 @@ public class datentypen { // Klasse: Datentypen (Datei: Datentypen.java)
         System.out.println("boolean: "+bool);
         System.out.println("char: "+c);
 
+        // variable = -1
+        // variable>>>30;
+
         // convert
 
         float f2 = 3.4028235E38F; // float: 32 bit, 1.4E-45 bis 3.4028235E38
