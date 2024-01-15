@@ -3,7 +3,7 @@ package Aufgabe19_21.geom;
 public class TestFigur3D {
     public static void main(String[] args) {
         int number = 100;
-        Kugel array[] = new Kugel[number]; // erstellt ein array mit dem namen array und der länge nomber
+        Kugel array[] = new Kugel[number]; // erstellt ein array mit dem namen array und der länge number
         for (int i = 0; i < array.length; i++) {
             array[i] = new Kugel((int) Math.random()*100); // erstellt ein objekt vom typ Class und speichert es in das array an der stelle i
         }
