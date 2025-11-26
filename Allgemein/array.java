@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Arrays; // Needed for Arrays.asList() - converts array to List
 
 public class array {
     public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class array {
         
         
         // ===== ARRAYLISTS (Dynamic Size) =====
-        // Quick initialization with Arrays.asList
+        // Arrays.asList converts array to List
         ArrayList<String> names = new ArrayList<>(Arrays.asList("Anna", "Bob", "Charlie"));
         
         // Common Actions
