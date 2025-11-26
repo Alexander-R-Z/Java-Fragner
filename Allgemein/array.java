@@ -24,11 +24,11 @@ public class array {
         ArrayList<String> names = new ArrayList<>(Arrays.asList("Anna", "Bob", "Charlie"));
         
         // Common Actions
-        names.add("David");              // Add to end
-        names.add(0, "Zoe");             // Add at specific index
-        names.remove("Bob");             // Remove by value
-        names.remove(1);                 // Remove by index
-        names.set(0, "Zara");            // Update/Replace value at index
+        names.add("David");			// Add to end
+        names.add(0, "Zoe");			// Add at specific index
+        names.remove("Bob");			// Remove by value
+        names.remove(1);				// Remove by index
+        names.set(0, "Zara");			// Update/Replace value at index
         boolean hasAnna = names.contains("Anna"); // Check if exists
         System.out.println("Size: " + names.size()); // Get size
         
